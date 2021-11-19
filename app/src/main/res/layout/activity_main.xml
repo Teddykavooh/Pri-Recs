@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/notify_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/create_floating_widget"
+        android:layout_above="@id/b2"
+        android:onClick="onRestart" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:onClick="onRestart"
+        android:text="@string/restart"
+        android:id="@+id/b2"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/b1"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickPrint"
+        android:text="@string/print"
+        android:id="@+id/b1"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="60dp"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:onClick="onQuit"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="60dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:background="@drawable/rounded_corner"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/catchErr"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_error_outline_24"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp" />
+
+    <ImageView
+        android:id="@+id/tester"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bubble"
+        tools:ignore="ContentDescription"
+        android:layout_above="@id/notify_me"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

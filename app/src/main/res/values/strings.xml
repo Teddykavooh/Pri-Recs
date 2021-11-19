@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pri-Recs</string>
+    <string name="quit">Quit</string>
+    <string name="print">Print</string>
+    <string name="mainicon">MainIcon</string>
+    <string name="subicon">SubIcon</string>
+    <string name="restart">Restart</string>
+    <string name="create_floating_widget">Create Floating Widget</string>
+    <string name="settings">Settings</string>
+    <string name="folder">Choose your folder</string>
+</resources>
